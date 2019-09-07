@@ -1,0 +1,71 @@
+<nav>
+	<ul>
+		<li><a class="a" href="http://www.calstatela.edu/orgs/RoboSub" style="color : black; text-decoration : none">Home</a></li>
+		<li><a class="a" href="http://www.calstatela.edu/orgs/RoboSub/about-us" style="color : black; text-decoration : none">About</a></li>
+		<li><a class="a" href="http://www.calstatela.edu/orgs/RoboSub/current-progress" style="color : black; text-decoration : none">Progress</a></li>
+		<li><a class="a" href="http://www.calstatela.edu/orgs/RoboSub/meet-team" style="color : black; text-decoration : none">Team</a></li>
+		<li><a class="a" href="http://www.calstatela.edu/orgs/RoboSub/vehicle-archive" style="color : black; text-decoration : none">Archive</a></li>
+		<li><a class="a" href="http://www.calstatela.edu/orgs/RoboSub/sponsors" style="color : black; text-decoration : none">Sponsors</a></li>
+	</ul>
+</nav>
+<style type="text/css">html {
+            height:100%;
+          }
+
+          nav {
+            background-image: linear-gradient(to top, #9ef7ff 0%, #9ef7ff 50%, #fbffde 100%);
+            max-width: 960px;
+            mask-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);
+            margin: 0 auto;
+            padding: 0px 0;
+          }
+
+          nav ul {
+            text-align: center;
+            background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
+            //box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+          }
+
+          nav ul li {
+            display: inline-block;
+          }
+
+          nav ul li a {
+            padding: 18px;
+            font-family: "Verdana";
+            text-transform:uppercase;
+            color: rgba(255, 255, 255, 1);
+            font-size: 18px;
+            text-decoration: none;
+            display: block;
+          }
+
+          nav ul li a:hover {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+            background: rgba(255, 255, 255, 0.1);
+            color: rgba(0, 35, 122, 0.7);
+          }
+</style>
+<p><span style="font-size: 20px;">Eagle I: 2017</span></p>
+
+<p><img alt="Temporary image" src="/sites/default/files/users/u227286/bbq1.jpg" style="width: 365px; float: right; margin-left: 16px; margin-bottom: 16px; height: 274px;">2017 was the first year that California State University, Los Angeles competed in the international RoboSub competition. The first vehicle, nicknamed Eagle I, was constructed with a pelikan case hull and a mechanical frame made out of T-slotted aluminum bars. Custom PCBs were created for power distribution and thruster control. Computer vision algorithms were developed for a Raspberry Pi, and a Pixhawk autopilot was used for the control algorithms. 3D printing was done for thruster casings and electronics enclosures. The team attempted to develop hydrophone algorithms, but was unsuccessful in their attempts.&nbsp;</p>
+
+<p><img alt="Temporary image" src="/sites/default/files/users/u227286/images.jpg" style="width: 305px; float: left; margin-right: 16px; margin-bottom: 16px; height: 165px;">Each year, RoboNation chooses a theme for the competition. In 2017, to mark the 20 year anniversary of the RoboSub competition, the theme was '20 years under the sea'. The rules for the 2017 competition can be found here:&nbsp;<a href="https://www.robonation.org/sites/default/files/RoboSub_2017_Final_Mission_v2_5-2.pdf">https://www.robonation.org/sites/default/files/RoboSub_2017_Final_Mission_v2_5-2.pdf</a>. Submarines in the 2017 competition had to touch buoys, classify objects, follow paths, collect samples, drop markers in bins, and shoot torpedoes at squids. These tasks were difficult, and left much to be learned for following years of the competition.&nbsp;</p>
+
+<p>In 2017, the team wrote a technical report outlining the details of the vehicle constructed in the prior year. The technical report can be found here:&nbsp;<a href="https://www.robonation.org/sites/default/files/RS17_CalStateLA_Journal-2.pdf">https://www.robonation.org/sites/default/files/RS17_CalStateLA_Journal-2.pdf</a>. Additionally, the team video for 2017 can be viewed below:</p>
+
+<p>[[{"fid":"925061","view_mode":"default","fields":{"format":"default"},"link_text":null,"type":"media","field_deltas":{"1":{"format":"default"}},"attributes":{"height":180,"width":180,"class":"media-element file-default","data-delta":"1"}}]]</p>
+
+<h2><span style="font-size:20px;">Eagle II: 2018</span></h2>
+
+<p><img alt="Temporary image" src="/sites/default/files/users/u227286/54231685_408184866663140_5508445236809925111_n.jpg" style="width: 250px; float: right; margin-left: 16px; margin-bottom: 16px; height: 250px;">In 2018, the team used the knowledge gained from the previous year at the competition to improve the design of the vehicle. The mechanical team designed an aluminum bulk head from an old scrap piece of cylindrical aluminum, a frame designed to be water jet from 1/4" aluminum sheets, and an acrylic hull made with enclosures from Blue Robotics. The acrylic hull was designed to fit on the bulk head with an O-ring seal and latches to secure it, and a shelving system was designed for the inside of the hull to house the electronics. The electronics systems on Eagle II consisted of an ATX mini motherboard, 2 USB cameras, a Vectornav IMU, 8 Blue Robotics T200 thrusters, a Blue Robotics depth sensor, a custom printed PCB for thruster control, an Arduino running&nbsp;the PID stabilization control algorithm, a Doppler Velocity Log (DVL), a PCI-E power supply for the motherboard, 14.8V/10000mAh LiPo batteries, and several buck converters to step down voltage for the different components. The motherboard ran the Ubuntu 18.04 operating system with ROS, which interfaced several python programs for high level control code. The computer vision algorithms used OpenCV for object detection.&nbsp;</p>
+
+<p><img alt="Temporary image" src="/sites/default/files/users/u227286/37819992_230127814374001_1986757033956737024_n.jpg" style="width: 250px; height: 250px; float: left; margin-right: 16px; margin-bottom: 16px;">The 2018 competition was themed, appropriately for the 21st anniversary of the RoboSub competition, 'casino TRANSDEC'. The obstacles included paths to follow, chip dispensers, a roulette game, dice buoys, a slot machine for shooting torpedoes, and an area to surface in to cash in chips. The official rules from 2018 can be found here:&nbsp;<a href="https://www.robonation.org/sites/default/files/2018%20RoboSub_2018%20Mission%20and%20Scoring_v01.50.pdf">https://www.robonation.org/sites/default/files/2018%20RoboSub_2018%20Mission%20and%20Scoring_v01.50.pdf</a>. Eagle II did not complete any obstacles in its semi-final run, despite being able to complete the gate task. There were several things to be learned from the 2018 competition - although several of the team's weapons systems worked out of water, they were never tested underwater and malfunctioned when tested at the competiton. Similarly, the hydrophone developments were not fully completed before the competition, and did not work as the team had hoped during the competition. There were several issues encountered with interfacing the hardware and getting the computer vision to operate as expected. While practicing in the TRANSDEC with Eagle II, the sub's computer vision could not detect the path on the floor of the pool, and thus, got stuck in the path search algorithm and did not complete anything past the gate in the TRANSDEC. This was the primary factor that contributed to design revisions for the 2019 vehicles.&nbsp;</p>
+
+<p>The team's technical report for Eagle II can be found here:&nbsp;<a href="https://www.robonation.org/sites/default/files/AUVCalStateLA_TDR_RS18.pdf">https://www.robonation.org/sites/default/files/AUVCalStateLA_TDR_RS18.pdf</a>. This document outlines the technical details of the team's second submarine entered in the RoboSub competition. The team's video from 2018 highlighting the vehicle and our previous team can be viewed below.&nbsp;</p>
+
+<p>[[{"fid":"925126","view_mode":"default","fields":{"format":"default"},"link_text":null,"type":"media","field_deltas":{"2":{"format":"default"}},"attributes":{"height":180,"width":180,"class":"media-element file-default","data-delta":"2"}}]]</p>
+
+<h2><span style="font-size:20px;">GY4R4DO5 &amp; M4G1K4RP: 2019</span></h2>
+
+<p>The GitHub repository containing all the 2019 code for GY4R4DO5 can be found here:&nbsp;<a href="https://github.com/CSULA-RoboSub/Robosub2018">https://github.com/CSULA-RoboSub/Robosub2018</a>. This was the same repository used in the previous year, but the code has been updated for the 2019 competition. More information will be added shortly.</p>
